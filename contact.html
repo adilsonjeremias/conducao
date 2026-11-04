@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Escola de Condução Vanila</title>
+  <meta name="description" content="Get in touch with DRIVIN. Book your driving lesson, ask questions, or visit us at our New York location.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <a href="tel:+1234567890"><i class="fa fa-phone"></i> +258 847 890 000</a>
+        <a href="mailto:info@drivin.com"><i class="fa fa-envelope"></i> info@madivadua.com</a>
+      </div>
+      <div class="topbar-right">
+        <span><i class="fa fa-clock"></i> Seg - Sáb: 8:00 AM - 7:00 PM</span>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand"><i class="fa fa-car-side"></i><span>MADIVADUA</span></a>
+      <button class="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+       <a href="index.html">Página Incial</a>
+        <a href="about.html">Sobre Nós</a>
+        <a href="courses.html">Categorias</a>
+        <a href="contact.html">Contactos</a>
+        <a href="contact.html#booking" class="btn btn-primary btn-sm">Inscrever-se</a>
+      </div>
+    </div>
+    <div class="nav-overlay"></div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contacte-nos</h1>
+      <p>Tem dúvidas? Está pronto para começar? Entre em contacto connosco e vamos ajudá-lo a dar o primeiro passo para obter a sua licença.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Contacto</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Info -->
+        <div class="reveal">
+          <div class="section-label" style="justify-content:flex-start;">Entre em Contacto</div>
+          <h2 class="section-title" style="text-align:left;">Estamos aqui para ajudar</h2>
+          <p style="color:var(--gray-600);margin-bottom:2rem;">Quer esteja pronto para marcar a sua primeira aula ou tenha apenas algumas dúvidas sobre os nossos programas, adoraríamos que nos contactasse.</p>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa fa-location-dot"></i></div>
+            <div>
+              <h5>Visite-nos</h5>
+              <p>Cidade da Matola<br>bairro intaka, Estrada circular</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa fa-phone"></i></div>
+            <div>
+              <h5>Ligue-nos</h5>
+              <p><a href="tel:+1234567890">+258 847 890 000</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa fa-envelope"></i></div>
+            <div>
+              <h5>Email</h5>
+              <p><a href="mailto:info@drivin.com">info@vanila.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa fa-clock"></i></div>
+            <div>
+              <h5>Horário para visitas</h5>
+              <p>Segunda - Sábado: 8:00 AM - 7:00 PM<br>Domingos: Encerrado</p>
+            </div>
+          </div>
+
+          <div class="map-placeholder" style="margin-top:1.5rem;">
+            <span><i class="fa fa-map"></i> Localização</span>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="booking-form-card reveal reveal-delay-1" id="contact-form">
+          <h3>Envie-nos uma Mensagem</h3>
+          <form data-form>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="cf-name">Nome Completo *</label>
+                <input type="text" id="cf-name" name="name" required placeholder="João Manteigas">
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email *</label>
+                <input type="email" id="cf-email" name="email" required placeholder="joaom@exemplo.com">
+              </div>
+              <div class="form-group">
+                <label for="cf-phone">Telefone</label>
+                <input type="tel" id="cf-phone" name="phone" placeholder="+258 86 78 94 908">
+              </div>
+              <div class="form-group">
+                <label for="cf-course">Interesse</label>
+                <select id="cf-course" name="course">
+                  <option value="">Selecione uma categoria</option>
+                  <option value="automatic">Ligeiros</option>
+                  <option value="highway">Pesados</option>
+                  <option value="full">Profissional</option>
+                  <option value="other">Serviços Públicos</option>
+                  <option value="other">serviços Públicos</option>
+                  <option value="other">Cargas Perigosas</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="cf-message">Mensagem *</label>
+                <textarea id="cf-message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
+              </div>
+              <div class="form-group full">
+                <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Enviar <i class="fa fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Road Divider -->
+  <div class="road-divider"><span class="road-icon"><i class="fa fa-calendar-check"></i></span></div>
+
+  <!-- Booking Section -->
+  <section class="booking-section py-section" id="booking">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info reveal">
+          <div class="section-label" style="justify-content:flex-start;color:var(--yellow);">
+            <span style="background:var(--yellow);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">Book a Lesson</span>
+          </div>
+          <h2>Inscreva-te para uma instrução</h2>
+          <p>Preencha o formulário e iremos indicar-lhe o instrutor e o horário mais adequados. Comece já o seu percurso para obter a carta de condução mais rapidamente.</p>
+          <div class="booking-features">
+            <div class="booking-feature">
+              <i class="fa fa-check-circle"></i>
+              <span>Same-week availability most of the time</span>
+            </div>
+            <div class="booking-feature">
+              <i class="fa fa-check-circle"></i>
+              <span>Free cancellation up to 24 hours before</span>
+            </div>
+            <div class="booking-feature">
+              <i class="fa fa-check-circle"></i>
+              <span>Pick-up from your location available</span>
+            </div>
+            <div class="booking-feature">
+              <i class="fa fa-check-circle"></i>
+              <span>No hidden fees -- transparent pricing</span>
+            </div>
+          </div>
+        </div>
+        <div class="booking-form-card reveal reveal-delay-1">
+          <h3>Preencha o formulário</h3>
+          <form data-form>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="b-name">Nome Completo *</label>
+                <input type="text" id="b-name" name="name" required placeholder="João Homo">
+              </div>
+              <div class="form-group">
+                <label for="b-email">Email *</label>
+                <input type="email" id="b-email" name="email" required placeholder="joaoh@exemplo.com">
+              </div>
+              <div class="form-group">
+                <label for="b-phone">Telefone *</label>
+                <input type="tel" id="b-phone" name="phone" required placeholder="+258 83 567 8900">
+              </div>
+              <div class="form-group">
+                <label for="b-course">Categoria *</label>
+                <select id="b-course" name="course" required>
+                  <option value="">Selecione uma categoria</option>
+                  <option value="automatic">Ligeiros</option>
+                  <option value="highway">Pesados</option>
+                  <option value="full">Profissional</option>
+                  <option value="other">Serviços Públicos</option>
+                  <option value="other">serviços Públicos</option>
+                  <option value="other">Cargas Perigosas</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="b-date">Data de Nascimento</label>
+                <input type="date" id="b-date" name="date">
+              </div>
+              <div class="form-group">
+                <label for="b-time">Horário Preferido</label>
+                <select id="b-time" name="time">
+                  <option value="">Selecione a Hora</option>
+                  <option value="morning">Manhãs (8 AM - 11 AM)</option>
+                  <option value="midday">Meio Dia (11 AM - 2 PM)</option>
+                  <option value="afternoon">Tarde (2 PM - 5 PM)</option>
+                  <option value="evening">Noite (5 PM - 7 PM)</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="b-notes">Notas adicionais</label>
+                <textarea id="b-notes" name="notes" rows="3" placeholder="Coloquei aqui algumas notas ou questões"></textarea>
+              </div>
+              <div class="form-group full">
+                <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Submeter <i class="fa fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><i class="fa fa-car-side"></i> <span>MADIVADUA</span></div>
+          <p>Aulas de condução profissionais que desenvolvem a confiança na condução no mundo real. Ensino paciente e com prioridade na segurança para alunos de todos os níveis.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">Sobre Nós</a>
+            <a href="courses.html">Categorias</a>
+            <a href="contact.html">Contactos</a>
+          </div>
+        </div>
+        <div>
+          <h4>Courses</h4>
+          <div class="footer-links">
+            <a href="courses.html">Ligeiros</a>
+            <a href="courses.html">Pesados</a>
+            <a href="courses.html">Profissional</a>
+            <a href="courses.html">Serviços Públicos</a>
+            <a href="courses.html">Cargas Perigosas</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <i class="fa fa-map-marker-alt"></i>
+            <p>Cidade da Matola<br>bairro intaka, Estrada circular</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-phone"></i>
+            <p><a href="tel:+1234567890">+258 847 890 000</a></p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:info@drivin.com">info@madivadua.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        &copy; <span data-year></span> ESCOLA DE CONDUÇÃO MADIVADUA. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up"></i></button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
